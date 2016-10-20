@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021235831DB627D80002E5E1 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 021235821DB627D80002E5E1 /* UILabel+Category.m */; };
+		021235861DB74F8F0002E5E1 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 021235851DB74F8F0002E5E1 /* UIViewExt.m */; };
 		02935FFD1DB4F68D00574B46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02935FFC1DB4F68D00574B46 /* main.m */; };
 		029360001DB4F68D00574B46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02935FFF1DB4F68D00574B46 /* AppDelegate.m */; };
 		029360031DB4F68D00574B46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029360021DB4F68D00574B46 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021235811DB627D80002E5E1 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		021235821DB627D80002E5E1 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
+		021235841DB74F8F0002E5E1 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		021235851DB74F8F0002E5E1 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		02935FF81DB4F68D00574B46 /* iOS常见控件的封装.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS常见控件的封装.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02935FFC1DB4F68D00574B46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02935FFE1DB4F68D00574B46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 		029360251DB4F68D00574B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029360321DB4F6B200574B46 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		029360331DB4F6B200574B46 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		029E00421DB7CCBA0056DEE2 /* Common.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +159,11 @@
 			children = (
 				029360321DB4F6B200574B46 /* UIButton+Block.h */,
 				029360331DB4F6B200574B46 /* UIButton+Block.m */,
+				021235811DB627D80002E5E1 /* UILabel+Category.h */,
+				021235821DB627D80002E5E1 /* UILabel+Category.m */,
+				021235841DB74F8F0002E5E1 /* UIViewExt.h */,
+				021235851DB74F8F0002E5E1 /* UIViewExt.m */,
+				029E00421DB7CCBA0056DEE2 /* Common.pch */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -292,10 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021235861DB74F8F0002E5E1 /* UIViewExt.m in Sources */,
 				029360031DB4F68D00574B46 /* ViewController.m in Sources */,
 				029360341DB4F6B200574B46 /* UIButton+Block.m in Sources */,
 				029360001DB4F68D00574B46 /* AppDelegate.m in Sources */,
 				02935FFD1DB4F68D00574B46 /* main.m in Sources */,
+				021235831DB627D80002E5E1 /* UILabel+Category.m in Sources */,
 				029360091DB4F68D00574B46 /* iOS_______.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +460,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C69KXLDX73;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS常见控件的封装/Category/Common.pch";
 				INFOPLIST_FILE = "iOS常见控件的封装/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangjian.cocoapods.iOS-------";
@@ -458,6 +474,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C69KXLDX73;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS常见控件的封装/Category/Common.pch";
 				INFOPLIST_FILE = "iOS常见控件的封装/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangjian.cocoapods.iOS-------";
@@ -534,6 +552,7 @@
 				0293602A1DB4F68D00574B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0293602B1DB4F68D00574B46 /* Build configuration list for PBXNativeTarget "iOS常见控件的封装Tests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +561,7 @@
 				0293602D1DB4F68D00574B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0293602E1DB4F68D00574B46 /* Build configuration list for PBXNativeTarget "iOS常见控件的封装UITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +570,7 @@
 				029360301DB4F68D00574B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
