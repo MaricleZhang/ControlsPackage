@@ -10,12 +10,14 @@
 #import "UIButton+Block.h"
 #import "UILabel+Category.h"
 #import "UIViewExt.h"
+#import "UIAlertController+Category.h"
 
 #define RGB(R,G,B) [UIColor colorWithRed:R green:G blue:B alpha:1.0]
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define FontSize(_size_) [UIFont systemFontOfSize:_size_]
 
 @interface ViewController ()
+@property(nonatomic,copy)NSString *str;
 
 @end
 
@@ -26,11 +28,17 @@
     
     //按钮
     UIButton *button = [UIButton createBtnFrame:CGRectMake(100, 100,SCREEN_WIDTH - 2*100, 50) title:@"button" bgImageName:nil action:^(UIButton *button) {
+        _str = @"";
         float r = random()%255/255.0;
         float g = random()%255/255.0;
         float b = random()%255/255.0;
         
         self.view.backgroundColor = RGB(r, g, b);
+        [UIAlertController showAlertCntrollerWithViewController:self alertControllerStyle:UIAlertControllerStyleAlert title:@"温馨提示" message:@"你确定要退出该账号吗？" CallBackBlock:^(NSInteger btnIndex) {
+            NSLog(@"点击第%li个按钮",btnIndex);
+
+            
+        } cancelButtonTitle:nil destructiveButtonTitle:@"在考虑" otherButtonTitles:@"确定", nil];
     }];
     [self.view addSubview:button];
     
@@ -51,6 +59,16 @@
 //    label.attributedText = attText;
 //    label.height = [label getAttributeLabelHeightWithText:text maxWidth:maxWidth lineSpacing:20.0f];
     NSLog(@"%f",label.height);
+    
+    //显示alertViewController
+    UIButton *alertButton = [UIButton createBtnFrame:CGRectMake(100, label.bottom + 30,SCREEN_WIDTH - 2*100, 50) title:@"显示alerView" bgImageName:nil action:^(UIButton *button) {
+        [UIAlertController showAlertCntrollerWithViewController:self alertControllerStyle:UIAlertControllerStyleAlert title:@"温馨提示" message:@"你确定要退出该账号吗？" CallBackBlock:^(NSInteger btnIndex) {
+            NSLog(@"点击第%li个按钮",btnIndex);
+            
+            
+        } cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"确定",nil];
+    }];
+    [self.view addSubview:alertButton];
     
     
     

@@ -19,6 +19,7 @@
 		029360191DB4F68D00574B46 /* iOS_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 029360181DB4F68D00574B46 /* iOS_______Tests.m */; };
 		029360241DB4F68D00574B46 /* iOS_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 029360231DB4F68D00574B46 /* iOS_______UITests.m */; };
 		029360341DB4F6B200574B46 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 029360331DB4F6B200574B46 /* UIButton+Block.m */; };
+		029E00591DBD8D480056DEE2 /* UIAlertController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 029E00581DBD8D480056DEE2 /* UIAlertController+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		029360321DB4F6B200574B46 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		029360331DB4F6B200574B46 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		029E00421DB7CCBA0056DEE2 /* Common.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.pch; sourceTree = "<group>"; };
+		029E00571DBD8D480056DEE2 /* UIAlertController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Category.h"; sourceTree = "<group>"; };
+		029E00581DBD8D480056DEE2 /* UIAlertController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				021235821DB627D80002E5E1 /* UILabel+Category.m */,
 				021235841DB74F8F0002E5E1 /* UIViewExt.h */,
 				021235851DB74F8F0002E5E1 /* UIViewExt.m */,
+				029E00571DBD8D480056DEE2 /* UIAlertController+Category.h */,
+				029E00581DBD8D480056DEE2 /* UIAlertController+Category.m */,
 				029E00421DB7CCBA0056DEE2 /* Common.pch */,
 			);
 			path = Category;
@@ -306,6 +311,7 @@
 			files = (
 				021235861DB74F8F0002E5E1 /* UIViewExt.m in Sources */,
 				029360031DB4F68D00574B46 /* ViewController.m in Sources */,
+				029E00591DBD8D480056DEE2 /* UIAlertController+Category.m in Sources */,
 				029360341DB4F6B200574B46 /* UIButton+Block.m in Sources */,
 				029360001DB4F68D00574B46 /* AppDelegate.m in Sources */,
 				02935FFD1DB4F68D00574B46 /* main.m in Sources */,
